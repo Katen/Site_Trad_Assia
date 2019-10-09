@@ -83,7 +83,7 @@ section {
     height: 100%;
     background-position: center;
 }
-.imgApropos{
+.imgService{
     background-color: Transparent;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     background-repeat: no-repeat;
@@ -112,6 +112,13 @@ section {
     margin-top: -25%;
     top:1%;
     margin-left: 10%;
+    width: 15%;
+    height: 40%;
+}
+.box4 {
+    margin-top: -13%;
+    top:1%;
+    margin-left: 12%;
     width: 15%;
     height: 40%;
 }
@@ -164,6 +171,14 @@ section {
   transform: rotate(-10deg);
 }
 
+.imgTransform4 img{
+  -webkit-transform:rotate(13deg);
+  -moz-transform: rotate(13deg);
+  -ms-transform: rotate(13deg);
+  -o-transform: rotate(13deg);
+  transform: rotate(13deg);
+}
+
 .modal {
   position: absolute;
   top: 15%;
@@ -171,13 +186,17 @@ section {
   /* transform: translate(-50%, -50%); */
 }
 .modal-content p{
-  text-align: center;
   color: black;
   font-size: 16px;
 }
 
-.bodyPolice{
+.bodyCenterPolice{
   text-align: center;
+  color: black;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+.bodyLeftPolice{
+  text-align: left;
   color: black;
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
@@ -188,17 +207,15 @@ section {
 
 .gras_italique_serif {
   font: large serif;
+  text-align: center;
 }
 
-.icon1{
-  background-image: url('../icon/diplome.png');
-  background-repeat: no-repeat;
+.iconPolice{
+  border: none !important;
   background-size: 100%;
   height: 40px;
-  width: 70px;
+  width: 40px;
 }
-
-
 
 /* SECTION CONTACT */
 #contact {
