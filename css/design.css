@@ -1,0 +1,224 @@
+
+body {
+
+}
+
+#navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+/* SECTION */
+section {
+    height: 100%;
+}
+
+.section {
+    /* the important one*/
+    background-attachment: fixed;
+    background-size: auto 80%;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+
+#section1 {
+
+}
+#section2 {
+
+}
+#section3 {
+
+}
+
+/* SECTION PRINCIPALE */
+#mainsection {
+    background: url(../img/coffee-mac4.jpg);
+    padding-top: 20%;
+    background-size: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+
+.intro-message {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+.social-icon a {
+    color:white;
+}
+
+.social-icon a:hover {
+    color : #2c3e50;
+}
+
+.fa-stack {
+    font-size: 0.6em;
+}
+
+.services-block {
+    width: 100%;
+    border: solid 2px rgba(33, 32, 32, 0.08);
+    border-radius : 10px;
+    margin-top : 30px;
+    margin-bottom : 30px;
+    margin-right: 60px;
+}
+
+.icon-services {
+    padding-top : 30px;
+    color : #2c3e50;
+}
+
+/* SECTION SERVICES */
+
+#sectionService{
+    background: url(../img/coffee_table.jpg);
+    background-size: 100%;
+    height: 100%;
+    background-position: center;
+}
+.imgApropos{
+    background-color: Transparent;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    background-repeat: no-repeat;
+    background-size: 100%,100%;
+    height: 97%;
+    width: 95%;
+    border: none ;
+    cursor:pointer;
+}
+
+.box1 {
+    margin-top: -15%;
+    top:1%;
+    margin-left: 1%;
+    width: 15%;
+    height: 40%;
+}
+.box2 {
+    margin-top: -10%;
+    top:1%;
+    margin-left: 10%;
+    width: 15%;
+    height: 40%;
+}
+.box3 {
+    margin-top: -25%;
+    top:1%;
+    margin-left: 10%;
+    width: 15%;
+    height: 40%;
+}
+
+.blockNoteContainer{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 90%;
+  height: 40%;
+  margin-top: 25%;
+  left: 5%;
+}
+
+.imgHover img{
+	-webkit-transform: scale(1);
+  transform: scale(1);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+  /* border:2px solid #1C1A19; */
+  box-shadow: 5px 5px 5px #1C1A19;
+  -moz-box-shadow: 10px 10px 5px #1C1A19;
+  -webkit-box-shadow: 10px 10px 5px #1C1A19;
+  -khtml-box-shadow: 10px 10px 5px #1C1A19;
+}
+.imgHover:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.imgTransform1 img{
+  -webkit-transform:rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+.imgTransform2 img{
+  -webkit-transform:rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+.imgTransform3 img{
+  -webkit-transform:rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.modal {
+  position: absolute;
+  top: 15%;
+  left: 1%;
+  /* transform: translate(-50%, -50%); */
+}
+.modal-content p{
+  text-align: center;
+  color: black;
+  font-size: 16px;
+}
+
+.bodyPolice{
+  text-align: center;
+  color: black;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+.modal-content h3 {
+  text-align: center;
+  color: black;
+}
+
+.gras_italique_serif {
+  font: large serif;
+}
+
+.icon1{
+  background-image: url('../icon/diplome.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 40px;
+  width: 70px;
+}
+
+
+
+/* SECTION CONTACT */
+#contact {
+ padding-top : 80px;
+    background: #111111;
+    height :500px;
+}
+
+.contact-info{
+    background: #111111;
+    color : white;
+    height: 50px;
+    font-size: 1.1em;
+    padding-top : 10px;
+}
+
+/*BAS DE PAGE : FOOTER*/
+#footer {
+    margin-top : 20px;
+    font-size: 1.3em;
+    background: transparent;
+    border-color:transparent;
+}

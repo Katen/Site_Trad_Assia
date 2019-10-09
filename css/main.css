@@ -1,0 +1,69 @@
+/* Style Global */
+
+body {
+ background: #ffffff;
+ margin: 0;
+ height: 100%;
+ color: #384452;
+ font-family: sans-serif;
+ font-weight: 400;
+}
+/*---------- NAV ---------*/
+.font_0{
+    text-shadow:rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+    line-height:0.0em;
+    color: white;
+    text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;
+    letter-spacing:-10.2px;
+    margin: 20.3em 0;
+}
+
+/* Style bouton */
+.btn-theme {
+ color: #fff;
+ background-color: #384452;
+ border-color: #384452;
+ margin: 4px;
+}
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-theme:active,
+.btn-theme.active,
+.open .dropdown-toggle.btn-theme {
+ color: #fff;
+ background-color: #FCAC45;
+ border-color: #ffffff;
+}
+
+/* Style About */
+
+#f {
+ background: #384452;
+ padding-top: 70px;
+ padding-bottom: 70px;
+ text-align: center;
+}
+
+#f h3 {
+ color: white;
+ font-size: 28px;
+ font-weight: 700;
+ letter-spacing: 1px;
+}
+
+#f icon {
+ font-size: 8px;
+ color: #fff;
+ padding: 3px;
+}
+
+#f p {
+ font-size: 20px;
+ color: #f2f2f2;
+
+
+}
+
+#f img {
+ tex-align: center;
+}
