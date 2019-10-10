@@ -217,6 +217,13 @@ section {
   width: 40px;
 }
 
+/*FORM*/
+.formBody{
+  margin-left: 2%;
+  margin-right: 2%;
+  color: black;
+}
+
 /* SECTION CONTACT */
 #contact {
  padding-top : 80px;
