@@ -65,7 +65,7 @@
 
           <!-- SECTION ACCUEIL  -->
            <section id="mainsection" class="section">
-                <div class="container">
+                <!-- <div class="container">
                   <div class="col-lg-12">
                         <div class="intro-message">
                             <h1>Traduction et enseignement professionnel selon vos besoins.</h1>
@@ -104,7 +104,7 @@
                             <hr class="intro-divider">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
 
 
@@ -147,7 +147,7 @@
 
         <div class="section" id="contact">
               <!-- SECTION CONTACT -->
-              <div id="contact" class="contact-info">
+              <div id="retours" class="contact-info">
                   <div class="container">
                       <div class="footer-col col-md-6 text-center">
                           <h1>Nous rendre visite</h1>
@@ -196,6 +196,7 @@
           </footer> -->
   </div>
 
+  <!-- ================================= MODALS ================================= -->
   <!-- Modal A Propos -->
   <div id="aPropos" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg">
@@ -312,11 +313,12 @@
                <div class="col-xl-8 offset-xl-2 py-5">
 
                    <h1>Contact</h1>
-                   <p class="lead">Pour me contacter rien de plus simple</p>
 
-                   <form id="contact-form" method="post" action="contact.php" role="form">
+                   <div class="formBlock">
+                   <form id="contact-form" class="form" method="post" action="contact.php" role="form">
                        <div class="messages"></div>
                        <div class="controls">
+                       </br>
                            <div class="row">
                                <div class="col-md-6">
                                    <div class="form-group">
@@ -375,19 +377,20 @@
                            </div>
                        </div>
                    </form>
+                 </div>
                </div>
              </div>
 
-             <div class="col-sm-6" style="background-color:black;">
+             <div class="col-sm-6">
                      <!-- SECTION CONTACT -->
                      <div id="contact" class="contact-info">
-                         <div class="container">
+                         <!-- <div class="container"> -->
                                  <h1>Nous rendre visite</h1>
                                      <address>
                                          <strong>Anastasia Teaching</strong><br>
-                                         11 rue de Lille<br>
-                                         59000, Lille<br>
-                                         Tel: (+33) 320 000 000
+                                         23 rue de Raguse<br>
+                                         34000, Montpellier<br>
+                                         Tel: (+33) 6 XX XX XX XX
                                        </address>
 
                                        <address>
@@ -400,31 +403,23 @@
 
                                        <!--  CI-DESSOUS POUR CHANGER LES LIENS VERS VOS RESEAUX SOCIAUX  :  href="ici votre lien " -->
                                        <li>
-                                           <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-linkedin"></i></a>
+                                           <a href="https://www.linkedin.com/in/anastasia-vasina-03a98b110/?originalSubdomain=fr" class="btn-social btn-outline"><i class="fa fa-2x fa-linkedin"></i></a>
                                        </li>
                                        <li>
-                                           <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-facebook"></i></a>
-                                       </li>
-                                       <li>
-                                           <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-twitter"></i></a>
-                                       </li>
-                                       <li>
-                                           <a href="#" class="btn-social btn-outline"><i class="fa fa-2x  fa-vine"></i></a>
+                                           <a href="https://www.facebook.com/anastasia.teach.1" class="btn-social btn-outline"><i class="fa fa-2x fa-facebook"></i></a>
                                        </li>
                                    </ul>
-
-                         </div>
+                         <!-- </div> -->
                    </div>
-
              </div>
-
            </div>
-
+          </div>
         </div>
-
       </div>
     </div>
   </div>
+
+  <!-- ================================= End MODALS ================================= -->
 
         <!-- Script Javascript -->
         <script src="bootstrap/js/vendor/modernizr-2.8.3.min.js"></script>
