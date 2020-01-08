@@ -1,0 +1,72 @@
+
+/* ========== Custom Carousel Indicators ========= */
+ol.carousel-indicators {
+  position: absolute;
+  bottom: 5%;
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  float: left;
+  width: 5%;
+  height: 3px;
+  margin: 0;
+  border-radius: 10px;
+  border: 0;
+  background: transparent;
+}
+
+ol.carousel-indicators li.active {
+  background: white;
+}
+
+/* ========== Custom Carousel body ========= */
+.carousel{
+    background: #2f4357;
+    position: relative;
+    width: 650px;
+    height: 350px;
+    padding: 17px;
+    padding-left: 10px;
+    margin: 0 auto 2em;
+    border: 1px solid #ddd;
+    background: #FFF;
+    background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+
+}
+.carousel-item{
+    text-align: center;
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+    padding-left: 1%;
+}
+.bs-example{
+	margin-top : 20px;
+}
+
+/* ========== Avanced box-shadow ==========*/
+.carousel:before,
+.carousel:after {
+	position: absolute;
+	bottom:16px;
+	z-index: -10;
+	width: 50%;
+	height: 20px;
+	content: " ";
+	background: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+.carousel:before {
+	left:0;
+	transform: rotate(-4deg);
+}
+.carousel:after {
+	right:0;
+	transform: rotate(4deg);
+}
