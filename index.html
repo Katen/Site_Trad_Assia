@@ -11,11 +11,12 @@
 
         <!-- Lien vers le fichier d'icones" -->
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen"> -->
+        <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 
         <!-- Custom style -->
@@ -142,15 +143,15 @@
               <!--<div id="retours" class="contact-info">
                    <div class="container"> -->
 
-                   <div class="bs-example">
+                   <!-- <div class="bs-example">
                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                           <!-- Carousel indicators -->
+
                            <ol class="carousel-indicators">
                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                                <li data-target="#myCarousel" data-slide-to="1"></li>
                                <li data-target="#myCarousel" data-slide-to="2"></li>
                            </ol>
-                           <!-- Wrapper for carousel items -->
+
                            <div class="carousel-inner">
                                <div class="carousel-item active">
                                    <img src="img/slide1.png" alt="First Slide">
@@ -166,7 +167,7 @@
                                    <img src="img/slide3.png" alt="Third Slide">
                                </div>
                            </div>
-                           <!-- Carousel controls -->
+
                            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
                                <span class="carousel-control-prev-icon"></span>
                            </a>
@@ -174,7 +175,23 @@
                                <span class="carousel-control-next-icon"></span>
                            </a>
                        </div>
+                   </div> -->
+
+
+                  <div  class="carousel slide" data-ride="carousel">
+                     <div class="w3-content w3-display-container" >
+                       <div class="carousel-item active">
+                       <img class="mySlides w3-animate-right" src="img/slide1.png" style="width:100%">
+
+                       <img class="mySlides w3-animate-right" src="img/slide2.png" style="width:100%">
+
+                       <img class="mySlides w3-animate-right" src="img/slide3.png" style="width:100%">
+                      </div>
+
+                       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                       <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
                    </div>
+
 
                        <!-- <div class="footer-col col-md-6 text-center">
                           <h1>Nous rendre visite</h1>
@@ -449,15 +466,19 @@
   <!-- ================================= End MODALS ================================= -->
 
         <!-- Script Javascript -->
-        <!-- <script src="bootstrap/js/vendor/modernizr-2.8.3.min.js"></script> -->
-        <!-- <script src="bootstrap/js/plugins.js"></script> -->
-        <!-- <script src="bootstrap/js/main.js"></script> -->
-		    <!-- <script src="bootstrap/js/bootstrap.js"></script> -->
+        <!-- <script src="bootstrap/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="bootstrap/js/plugins.js"></script>
+        <script src="bootstrap/js/main.js"></script>
+		    <script src="bootstrap/js/bootstrap.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
         <script type="text/javascript" src="https://cdn.rawgit.com/alvarotrigo/pagePiling.js/master/jquery.pagepiling.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 
 
         <script type="text/javascript">
@@ -484,6 +505,86 @@
               });
             });
         </script>
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
 
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+          }
+
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 5000);
+          }
+        </script>
+        <script>
+                $(function () {
+
+                  // init the validator
+                  // validator files are included in the download package
+                  // otherwise download from http://1000hz.github.io/bootstrap-validator
+
+                  $('#contact-form').validator();
+
+
+                  // when the form is submitted
+                  $('#contact-form').on('submit', function (e) {
+
+                      // if the validator does not prevent form submit
+                      if (!e.isDefaultPrevented()) {
+                          var url = "contact.php";
+
+                          // POST values in the background the the script URL
+                          $.ajax({
+                              type: "POST",
+                              url: url,
+                              data: $(this).serialize(),
+                              success: function (data)
+                              {
+                                  // data = JSON object that contact.php returns
+
+                                  // we recieve the type of the message: success x danger and apply it to the
+                                  var messageAlert = 'alert-' + data.type;
+                                  var messageText = data.message;
+
+                                  // let's compose Bootstrap alert box HTML
+                                  var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+
+                                  // If we have messageAlert and messageText
+                                  if (messageAlert && messageText) {
+                                      // inject the alert to .messages div in our form
+                                      $('#contact-form').find('.messages').html(alertBox);
+                                      // empty the form
+                                      $('#contact-form')[0].reset();
+                                  }
+                              }
+                          });
+                          return false;
+                      }
+                  })
+              });
+              </script>
     </body>
 </html>
