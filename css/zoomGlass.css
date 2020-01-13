@@ -1,11 +1,12 @@
 
 
 .glass {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   border-radius: 50%;
   cursor:none;
+  z-index: 777;
   /* Multiple box shadows to achieve the glass effect */
   box-shadow:
     0 0 0 7px rgba(255, 255, 255, 0.85),
@@ -17,9 +18,9 @@
 
 
 
-body {
+/* body {
   cursor: url(icon/test.ico), auto;
   font-family: helvetica;
   background: #eee;
   text-align: center;
-}
+} */

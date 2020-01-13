@@ -141,10 +141,10 @@ section {
 	-webkit-transition: .1s ease-in-out;
 	transition: .1s ease-in-out;
   /* border:2px solid #1C1A19; */
-  box-shadow: 5px 5px 5px #1C1A19;
-  -moz-box-shadow: 10px 10px 5px #1C1A19;
-  -webkit-box-shadow: 10px 10px 5px #1C1A19;
-  -khtml-box-shadow: 10px 10px 5px #1C1A19;
+  box-shadow: 10px 10px 10px #1C1A19;
+  -moz-box-shadow: 10px 10px 10px #1C1A19;
+  -webkit-box-shadow: 10px 10px 10px #1C1A19;
+  -khtml-box-shadow: 10px 10px 10px #1C1A19;
 }
 .imgHover:hover img {
 	-webkit-transform: scale(1.1);
@@ -253,11 +253,29 @@ section {
   padding-top : 10px;
 }
 
-/* SECTION RETOUR Client */
-#retours {
-  padding-top : 80px;
-  background: #111111;
-  height :500px;
+/* SECTION Feedback */
+#feedback {
+  background: url(../img/coffee_table.jpg);
+  background-size: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+#bookFeedbackID img{
+  position: absolute;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 25%;
+  background-color: Transparent;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  background-repeat: no-repeat;
+  background-size: 100%,100%;
+
+  box-shadow:  10px 10px 10px #1C1A19;
+  -moz-box-shadow:  10px 10px 10px #1C1A19;
+  -webkit-box-shadow:  10px 10px 10px #1C1A19;
+  -khtml-box-shadow:  10px  10px 10px #1C1A19;
+
 }
 
 /*BAS DE PAGE : FOOTER*/
