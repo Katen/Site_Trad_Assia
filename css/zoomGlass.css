@@ -1,9 +1,10 @@
 
 
 .glass {
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   position: absolute;
+   transform: scale(0.5);
   border-radius: 50%;
   cursor:none;
   z-index: 777;

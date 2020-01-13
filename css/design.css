@@ -194,7 +194,7 @@ section {
 .bodyCenterPolice{
   text-align: center;
   color: black;
-  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-family: "Indie Flower", cursive !important;
 }
 .bodyLeftPolice{
   text-align: left;
@@ -222,7 +222,7 @@ section {
 .formBody{
   margin-left: 1%;
   margin-right: 1%;
-  color: white;
+  color: black;
 }
 
 .form{
@@ -234,7 +234,7 @@ section {
 }
 
 .modal-body {
-  background-image: url(../img/paperTextur1.jpg);
+  background-image: url(../img/paperTextur7.jpg);
    background-size: 100% 100%;
 }
 
@@ -265,16 +265,30 @@ section {
   position: absolute;
   width: 30%;
   margin-left: 35%;
-  margin-top: 25%;
+  margin-top: 20%;
   background-color: Transparent;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   background-repeat: no-repeat;
   background-size: 100%,100%;
-
+/*
   box-shadow:  10px 10px 10px #1C1A19;
   -moz-box-shadow:  10px 10px 10px #1C1A19;
   -webkit-box-shadow:  10px 10px 10px #1C1A19;
-  -khtml-box-shadow:  10px  10px 10px #1C1A19;
+  -khtml-box-shadow:  10px  10px 10px #1C1A19; */
+
+}
+
+/* .bookFeedback{
+  position: relative;
+  text-align: center;
+  color: black;
+} */
+
+.top_left_feedback{
+  color: black;
+  font-family: "Indie Flower", cursive !important;
+  font-size: 100px;
+  z-index: 500;
 
 }
 

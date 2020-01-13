@@ -66,6 +66,7 @@ var magnify = function(e) {
   var ry = Math.round(mouse.y/cur_img.height()*native_height - ui.glass.height()/2)*-1;
   var bg_pos = rx + "px " + ry + "px";
 
+
   // Calculate pos for magnifying glass
   //
   // Easy Logic: Deduct half of width/height
