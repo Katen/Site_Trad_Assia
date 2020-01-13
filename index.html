@@ -18,11 +18,11 @@
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-
         <!-- Custom style -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/design.css">
         <link rel="stylesheet" href="css/slideshow.css">
+        <link rel="stylesheet" href="css/turn.css">
 
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -131,7 +131,6 @@
                           <img id="imgBCContact" class="imgService" src="img/BN_Contact.png">
                       </div>
                     </div>
-
                   </div>
                 </div>
           </section>
@@ -139,11 +138,31 @@
 
 
         <div class="section" id="contact">
-              <!-- SECTION CONTACT -->
+
+              <!-- SECTION Feedback -->
+              <!-- <div class="card">
+                <div class="imgBox">
+                  <div class="bark"></div>
+                  <img src="https://image.ibb.co/fYzTrb/lastofus.jpg">
+                </div>
+                <div class="details">
+                  <h4 class="color1">Feedback from United States</h2>
+                    <br/><br/>
+
+                      <p>Anastasia is such a fun, caring,</p>
+                      <p>enthusiastic, and rigorous teacher.</p>
+                      <p>Anastasia ensures her students develop</p><p> strong French language skills</p>
+                      <p>in all areas of reading, writing, </p><p>speaking, and listening by incorporating </p>
+                      <p>methods and materials that would</p><p> work best for them.</p>
+                      <p class="text-right">Sanghee Lee</p>
+                </div>
+              </div> -->
+
+
               <!--<div id="retours" class="contact-info">
                    <div class="container"> -->
 
-                   <!-- <div class="bs-example">
+                   <div class="bs-example">
                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
                            <ol class="carousel-indicators">
@@ -175,10 +194,10 @@
                                <span class="carousel-control-next-icon"></span>
                            </a>
                        </div>
-                   </div> -->
+                   </div>
 
 
-                  <div  class="carousel slide" data-ride="carousel">
+                  <!-- <div  class="carousel slide" data-ride="carousel">
                      <div class="w3-content w3-display-container" >
                        <div class="carousel-item active">
                        <img class="mySlides w3-animate-right" src="img/slide1.png" style="width:100%">
@@ -190,7 +209,7 @@
 
                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-                   </div>
+                   </div> -->
 
 
                        <!-- <div class="footer-col col-md-6 text-center">
@@ -505,7 +524,7 @@
               });
             });
         </script>
-        <script>
+        <!-- <script>
           var slideIndex = 1;
           showDivs(slideIndex);
 
@@ -538,53 +557,53 @@
             x[myIndex-1].style.display = "block";
             setTimeout(carousel, 5000);
           }
-        </script>
+        </script> -->
         <script>
-                $(function () {
+          $(function () {
 
-                  // init the validator
-                  // validator files are included in the download package
-                  // otherwise download from http://1000hz.github.io/bootstrap-validator
+            // init the validator
+            // validator files are included in the download package
+            // otherwise download from http://1000hz.github.io/bootstrap-validator
 
-                  $('#contact-form').validator();
+            $('#contact-form').validator();
 
 
-                  // when the form is submitted
-                  $('#contact-form').on('submit', function (e) {
+            // when the form is submitted
+            $('#contact-form').on('submit', function (e) {
 
-                      // if the validator does not prevent form submit
-                      if (!e.isDefaultPrevented()) {
-                          var url = "contact.php";
+                // if the validator does not prevent form submit
+                if (!e.isDefaultPrevented()) {
+                    var url = "contact.php";
 
-                          // POST values in the background the the script URL
-                          $.ajax({
-                              type: "POST",
-                              url: url,
-                              data: $(this).serialize(),
-                              success: function (data)
-                              {
-                                  // data = JSON object that contact.php returns
+                    // POST values in the background the the script URL
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        data: $(this).serialize(),
+                        success: function (data)
+                        {
+                            // data = JSON object that contact.php returns
 
-                                  // we recieve the type of the message: success x danger and apply it to the
-                                  var messageAlert = 'alert-' + data.type;
-                                  var messageText = data.message;
+                            // we recieve the type of the message: success x danger and apply it to the
+                            var messageAlert = 'alert-' + data.type;
+                            var messageText = data.message;
 
-                                  // let's compose Bootstrap alert box HTML
-                                  var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                            // let's compose Bootstrap alert box HTML
+                            var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
 
-                                  // If we have messageAlert and messageText
-                                  if (messageAlert && messageText) {
-                                      // inject the alert to .messages div in our form
-                                      $('#contact-form').find('.messages').html(alertBox);
-                                      // empty the form
-                                      $('#contact-form')[0].reset();
-                                  }
-                              }
-                          });
-                          return false;
-                      }
-                  })
-              });
-              </script>
+                            // If we have messageAlert and messageText
+                            if (messageAlert && messageText) {
+                                // inject the alert to .messages div in our form
+                                $('#contact-form').find('.messages').html(alertBox);
+                                // empty the form
+                                $('#contact-form')[0].reset();
+                            }
+                        }
+                    });
+                    return false;
+                }
+            })
+        });
+        </script>
     </body>
 </html>

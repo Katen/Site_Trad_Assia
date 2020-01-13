@@ -1,0 +1,40 @@
+.horizontal .carousel-inner {
+  height: 100%;
+}
+
+.carousel.horizontal .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+
+.carousel.horizontal .active {
+  top: 0;
+}
+
+.carousel.horizontal .next {
+  top: 400px;
+}
+
+.carousel.horizontal .prev {
+  top: -400px;
+}
+
+.carousel.horizontal .next.left,
+.carousel.horizontal .prev.right {
+  top: 0;
+}
+
+.carousel.horizontal .active.left {
+  top: -400px;
+}
+
+.carousel.horizontal .active.right {
+  top: 400px;
+}
+
+.carousel.horizontal .item {
+    left: 0;
+}

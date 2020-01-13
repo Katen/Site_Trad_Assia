@@ -234,7 +234,8 @@ section {
 }
 
 .modal-body {
-  background-image: url(../img/FormBGR.png);
+  background-image: url(../img/paperTextur1.jpg);
+   background-size: 100% 100%;
 }
 
 /* SECTION CONTACT */
@@ -252,7 +253,7 @@ section {
   padding-top : 10px;
 }
 
-/* SECTION RETROUR Client */
+/* SECTION RETOUR Client */
 #retours {
   padding-top : 80px;
   background: #111111;

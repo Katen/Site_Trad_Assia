@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 
-body {
+ body {
   font-family: "Indie Flower", cursive !important;
-  background: #fde3a7; /*CAPE HONEY*/
+/*  background: #fde3a7;
   margin: 0px;
-  padding: 0px;
+  padding: 0px;*/
 }
 
 ::selection {
@@ -20,12 +20,13 @@ h4 {
 
 .color1 {
   color: #1bbc9b;
-} /*MOUNTAIN MEADOW*/
+}
 .color2 {
-  color: #c0392b; /*TALL POPPY*/
+  color: #c0392b;
 }
 
 .card {
+  font-family: "Indie Flower", cursive !important;
   color: #013243; /*SHERPA BLUE*/
   position: absolute;
   top: 30%;
@@ -35,11 +36,13 @@ h4 {
   background: #e0e1dc;
   transform-style: preserve-3d;
   /* transform: translate(-50%, -50%) perspective(2000px); */
-	-webkit-transform:rotate(1deg);
+	-webkit-transform:rotate(10deg);
   box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5),
     20px 0 60px rgba(0, 0, 0, 0.5);
   transition: 1s;
 }
+
+.cardNumber1{}
 
 .card:hover {
   transform: translate(-10%, -10%) perspective(2000px) rotate(10deg) scale(1.2);
