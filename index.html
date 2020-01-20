@@ -50,9 +50,9 @@
         				</div>
         				  <div class="collapse navbar-collapse" id="collapse-menu">
         					<ul class="nav navbar-nav navbar-right">
-                    <li data-menuanchor="Home"><a href="#Home">Home</a></li>
-                    <li data-menuanchor="page2"><a href="#page2">Page 2</a></li>
-                    <li data-menuanchor="page3"><a href="#page3">Page 3</a></li>
+                    <li data-menuanchor="Home"><a href="#Home">Accueil</a></li>
+                    <li data-menuanchor="page2"><a href="#page2">Informations</a></li>
+                    <li data-menuanchor="page3"><a href="#page3">Feedback</a></li>
         					</ul>
         				</div>
         			</div>
@@ -60,46 +60,7 @@
 
           <!-- SECTION ACCUEIL  -->
            <section id="mainsection" class="section">
-                <!-- <div class="container">
-                  <div class="col-lg-12">
-                        <div class="intro-message">
-                            <h1>Traduction et enseignement professionnel selon vos besoins.</h1>
-                                <h3>Traduction et conseil en communication interculturelle</h3>
-                                <hr class="intro-divider">
-                            <h2>Suivez nous</h2>
-                              <ul class="list-inline social-icon">
-                                 <li>
-                                    <a href="https://www.linkedin.com"  target="_blank">
-                                    <span class="fa-stack">
-                                      <i class="fa fa-square-o fa-stack-2x"></i>
-                                      <i class="fa fa-linkedin fa-stack-1x"></i>
-                                    </span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                  <a href="https://www.facebook.com"  target="_blank">
-                                  <span class="fa-stack">
-                                    <i class="fa fa-square-o fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x"></i>
-                                  </span>
-                                  </a>
-                                </li>
-
-                                <li>
-                                  <a href="https://twitter.com/"  target="_blank">
-                                  <span class="fa-stack">
-                                    <i class="fa fa-square-o fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x"></i>
-                                  </span>
-                                  </a>
-                                </li>
-                            </ul>
-
-                            <hr class="intro-divider">
-                        </div>
-                    </div>
-                </div> -->
+             <div id="typewriter" class="auto_write"></div>
             </section>
 
 
@@ -469,12 +430,27 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
         <script src="js/zoomEffect.js"></script>
         <script src="js/validate.js"></script>
+        <script src="js/core.js"></script>
 
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 
 
+        <script type='text/javascript'>
+          const typewriter = new Typewriter('#typewriter', {
+            loop: false
+          });
+
+          typewriter
+            .typeString('Bienvenue sur le site d’enseignement et de traduction d’Anastasia Vasina.')
+            .typeString('<br/>')
+            .typeString('Pour toutes informations sur l’enseignement des langues et la traduction regardez la page d’informations.')
+            .typeString('<br/>')
+            .typeString('Je vous souhaite une agréable visite !')
+            .pauseFor(3500)
+            .start();
+        </script>
         <script type="text/javascript">
            $(document).ready(function() {
                $('#pagepiling').pagepiling({
@@ -502,21 +478,15 @@
 
         <script>
           $(function () {
-
             // init the validator
             // validator files are included in the download package
             // otherwise download from http://1000hz.github.io/bootstrap-validator
-
-            $('#contact-form').validator();
-
-
+          $('#contact-form').validator();
             // when the form is submitted
             $('#contact-form').on('submit', function (e) {
-
                 // if the validator does not prevent form submit
                 if (!e.isDefaultPrevented()) {
                     var url = "contact.php";
-
                     // POST values in the background the the script URL
                     $.ajax({
                         type: "POST",
@@ -525,14 +495,11 @@
                         success: function (data)
                         {
                             // data = JSON object that contact.php returns
-
                             // we recieve the type of the message: success x danger and apply it to the
                             var messageAlert = 'alert-' + data.type;
                             var messageText = data.message;
-
                             // let's compose Bootstrap alert box HTML
                             var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-
                             // If we have messageAlert and messageText
                             if (messageAlert && messageText) {
                                 // inject the alert to .messages div in our form

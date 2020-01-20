@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quantico&display=swap");
+
 
 body {
 
@@ -44,6 +50,27 @@ section {
     background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
+    -webkit-perspective: 100px; /* Safari 4-8  */
+    perspective: 100px;
+}
+
+.auto_write{
+  position: absolute;
+  -webkit-transform-style: preserve-3d; /* Safari 3-8  */
+  -webkit-transform: rotateX(-5deg); /* Safari 3-8  */
+  transform-style: preserve-3d;
+  transform: rotateX(-5deg);
+
+  width: 30%;
+  height: 15%;
+  margin-top: -25%;
+  margin-left: 35%;
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+  text-align: center;
+  font-size: 10px;
+  /* background-color: white; */
+
 }
 
 
