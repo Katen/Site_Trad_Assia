@@ -77,6 +77,11 @@ section {
 
 }
 /* Main writing text wight position correction */
+@media screen and (min-width: 1750px) and (max-width: 1850px) {
+  .auto_write {
+      top: 21%;
+  }
+}
 @media screen and (min-width: 1650px) and (max-width: 1750px) {
   .auto_write {
       top: 23%;
@@ -130,49 +135,62 @@ section {
   }
 }
 
-/* @media screen and (min-width: 1030px) and (max-width: 1800px) and (min-height: 500px) and (max-height: 750px) {
-  .auto_write {
-      top: 15%;
-  }
-} */
-
-/* @media screen and (min-width: 1130px) and (max-width: 2100px) and (min-height: 750px) and (max-height: 1700px) {
-  .auto_write {
-      top: 27%;
-  }
-} */
-/* @media screen and (min-width: 1030px) and (max-width: 2100px) and (min-height: 500px) and (max-height: 700px) {
-  .auto_write {
-      top: 20%;
-      font-size: 0.4vw;
-  }
-}
-
-@media screen and (min-width: 315px) and (max-width: 325px) and (min-height: 300px) and (max-height: 800px) {
-  .auto_write {
-      font-size: 1.6vw;
-  }
-} */
-
-/* @media screen and (min-height: 750px) and (max-height: 800px) {
+@media screen and (min-width: 1025px) and (max-width: 1450px) and (min-height: 550px) and (max-height: 600px) {
   .auto_write {
       top: 20%;
   }
 }
-@media screen and (min-height: 650px) and (max-height: 750px) {
+@media screen and (min-width: 1025px) and (max-width: 1350px) and (min-height: 600px) and (max-height: 650px) {
   .auto_write {
-      top: 18%;
+      top: 22%;
   }
 }
-@media screen and (min-height: 500px) and (max-height: 650px) {
+@media screen and (min-width: 1350px) and (max-width: 1850px) and (min-height: 600px) and (max-height: 650px) {
   .auto_write {
-      top: 14%;
+      top: 20%;
   }
-}*/
-@media screen and (min-height: 1px) and (max-height: 450px) and (min-width: 850px) and (max-width: 4500px) {
+}
+@media screen and (min-width: 1350px) and (max-width: 1450px) and (min-height: 650px) and (max-height: 730px) {
   .auto_write {
-      top: -1400%;
+      top: 21%;
   }
+}
+@media screen and (min-width: 1450px) and (max-width: 1850px) and (min-height: 550px) and (max-height: 800px) {
+  .auto_write {
+      top: 13%;
+  }
+}
+/* @media screen and (min-width: 1030px) and (max-width: 1800px) and (min-height: 400px) and (max-height: 750px) {
+  .auto_write {
+      top: -15%;
+  }
+} */
+@media screen and (min-height: 1px) and (max-height: 550px) and (min-width: 850px) and (max-width: 4500px) {
+  .auto_write {
+      top: -140%;
+  }
+}
+
+.linkToFeedback{
+  position: absolute;
+  -webkit-transform:rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+  width: 15%;
+  height: 48%;
+  top: 55%;
+  left: 4%;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 700px) and (min-height: 560px) and (max-height: 850px){
+  .linkToFeedback {
+    pointer-events: none;
+    cursor: default;
+   }
 }
 
 
