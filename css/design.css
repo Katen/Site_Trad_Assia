@@ -40,8 +40,9 @@ section {
 }
 
 /* SECTION PRINCIPALE */
+
 #mainsection {
-    background: url(../img/coffee-mac7.gif);
+    background: url(../img/coffee-mac_15ips.gif);
     padding-top: 20%;
     background-size: 100%;
     height: 100%;
@@ -51,26 +52,89 @@ section {
     background-size: cover;
     background-color: #464646;
     -webkit-perspective: 100px; /* Safari 4-8  */
-    perspective: 100px;
+    perspective: 100px; */
 }
+
+
 
 .auto_write{
   position: absolute;
-  -webkit-transform-style: preserve-3d; /* Safari 3-8  */
-  -webkit-transform: rotateX(-5deg); /* Safari 3-8  */
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateX(-5deg);
   transform-style: preserve-3d;
   transform: rotateX(-5deg);
 
-  width: 30%;
-  height: 15%;
-  margin-top: -25%;
-  margin-left: 35%;
+  width: 24%;
+  height: auto;
+  top: 21%;
+  left: 38%;
   font-family: 'Press Start 2P', cursive;
   color: black;
   text-align: center;
-  font-size: 10px;
+  font-size: 0.6vw;
+  /* position: fixed; */
   /* background-color: white; */
 
+}
+/* Main writing text position correction */
+@media screen and (min-width: 1650px) and (max-width: 1750px) {
+  .auto_write {
+      top: 23%;
+  }
+}
+@media screen and (min-width: 1550px) and (max-width: 1650px) {
+  .auto_write {
+      top: 24%;
+  }
+}
+@media screen and (min-width: 1450px) and (max-width: 1550px) {
+  .auto_write {
+      top: 26%;
+  }
+}
+@media screen and (min-width: 1350px) and (max-width: 1450px) {
+  .auto_write {
+      top: 27%;
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1450px) {
+  .auto_write {
+      top: 29%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+  .auto_write {
+      top: 27%;
+      left: 37%;
+      width: 27%;
+      font-size: 0.7vw;
+      background-color: white;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .auto_write {
+      top: 27%;
+      left: 33%;
+      width: 35%;
+      font-size: 0.9vw;
+      background-color: white;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .auto_write {
+      top: 27%;
+      width: 64%;
+      left: 18%;
+      font-size: 1.7vw;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .auto_write {
+      top: 27%;
+      width: 65%;
+      left: 17%;
+      font-size: 2.0vw;
+  }
 }
 
 
@@ -120,9 +184,7 @@ section {
 }
 .imgService{
     background-color: Transparent;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     background-repeat: no-repeat;
-    background-size: 100%,100%;
     height: 97%;
     width: 95%;
     border: none ;
@@ -133,8 +195,9 @@ section {
     margin-top: -15%;
     top:1%;
     margin-left: 1%;
-    width: 15%;
+    width:15% ;
     height: 40%;
+
 }
 .box2 {
     margin-top: -10%;
@@ -165,7 +228,7 @@ section {
   justify-content: start;
   width: 90%;
   height: 40%;
-  margin-top: 25%;
+  top: 53%;
   left: 5%;
 }
 
@@ -233,7 +296,7 @@ section {
 .bodyLeftPolice{
   text-align: left;
   color: black;
-  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-family: "Indie Flower", cursive !important;
 }
 .modal-content h3 {
   text-align: center;
@@ -270,6 +333,7 @@ section {
 .modal-body {
   background-image: url(../img/paperTextur7.jpg);
    background-size: 100% 100%;
+   /* background-repeat: repeat; */
 }
 
 /* SECTION CONTACT */
@@ -289,7 +353,7 @@ section {
 
 /* SECTION Feedback */
 #feedback {
-  background: url(../img/coffee_table.jpg);
+  background: url(../img/coffee_table2.png);
   background-size: 100%;
   height: 100%;
 
@@ -305,8 +369,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30%;
-  margin-top: 19%;
+  left: 30%;
+  top: 40%;
   width: 45%;
   height: 55%;
   font-family: "Indie Flower", cursive !important;
