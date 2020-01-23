@@ -26,173 +26,164 @@
         <!-- liens vers pagepiling effet-->
         <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/alvarotrigo/pagePiling.js/master/jquery.pagepiling.css">
 
+        <script>
+          function onReady(callback) {
+          var intervalID = window.setInterval(checkReady, 2000);
+
+          function checkReady() {
+                if (document.getElementsByTagName('body')[0] !== undefined) {
+                    window.clearInterval(intervalID);
+                    callback.call(this);
+                }
+            }
+          }
+
+          function show(id, value) {
+            document.getElementById(id).style.display = value ? 'block' : 'none';
+          }
+
+          onReady(function () {
+            show('page', true);
+            show('loading', false);
+          });
+        </script>
+
     </head>
 
     <body>
-      <div id="pagepiling">
 
-            <!-- Navbar -->
-        		<div class="navbar navbar-inverse" role="navigation" id="navbar">
-        			<div class="container" >
-        				<div class="navbar-header page-scroll">
-                  <h4 >
-                    <font color="white"> Anastasia Vasina</font>
-                  </h4>
-                    <h5>
-                      <font color="white"> Translation & Teaching</span>
-                    </h5>
-        				</div>
-        				  <div class="collapse navbar-collapse" id="collapse-menu">
-        					<ul class="nav navbar-nav navbar-right">
-                    <li data-menuanchor="Home"><a href="#Home">Accueil</a></li>
-                    <li data-menuanchor="page2"><a href="#page2">Informations</a></li>
-                    <li data-menuanchor="page3"><a href="#page3">Feedback</a></li>
-        					</ul>
-        				</div>
-        			</div>
-        		</div>
+    <div id="page">
+          <div id="pagepiling">
+                <!-- Navbar -->
+            		<div class="navbar navbar-inverse" role="navigation" id="navbar">
+            			<div class="container" >
+            				<div class="navbar-header page-scroll">
+                      <h4 >
+                        <font color="white"> Anastasia Vasina</font>
+                      </h4>
+                        <h5>
+                          <font color="white"> Translation & Teaching</span>
+                        </h5>
+            				</div>
+            				  <div class="collapse navbar-collapse" id="collapse-menu">
+            					<ul class="nav navbar-nav navbar-right">
+                        <li data-menuanchor="Home"><a href="#Home">Accueil</a></li>
+                        <li data-menuanchor="page2"><a href="#page2">Informations</a></li>
+                        <li data-menuanchor="page3"><a href="#page3">Feedback</a></li>
+            					</ul>
+            				</div>
+            			</div>
+            		</div>
 
-          <!-- SECTION ACCUEIL  -->
-           <section id="mainsection" class="section">
-             <div class ="linkToFeedback" onclick="location.href='#page3';"></div>
-             <div id="typewriter" class="auto_write"></div>
-            </section>
-
-
-          <div id="sectionService" class="section">
-            <!-- SECTION SERVICES  -->
-            <section id="sectionService">
-
-                <div class="container">
-                  <div class = "blockNoteContainer">
-
-                    <div class = "box1">
-                      <div class="imgHover imgTransform1">
-                          <img id="imgBCaPropos" class="imgService" src="img/BN_Apropos.png">
-                      </div>
-                    </div>
-
-                    <div class = "box2">
-                      <div class="imgHover imgTransform2">
-                          <img id="imgBCEnsegment" class="imgService" src="img/BN_Enseignement.png">
-                      </div>
-                    </div>
-
-                    <div class = "box3">
-                      <div class="imgHover imgTransform3">
-                          <img id="imgBCTraduction" class="imgService" src="img/BN_Traduction.png">
-                      </div>
-                    </div>
-
-                    <div class = "box4">
-                      <div class="imgHover imgTransform4">
-                          <img id="imgBCContact" class="imgService" src="img/BN_Contact.png">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          </section>
-        </div>
+              <!-- SECTION ACCUEIL  -->
+               <section id="mainsection" class="section">
+                 <div class ="linkToFeedback" onclick="location.href='#page3';"></div>
+                 <div id="typewriter" class="auto_write"></div>
+                </section>
 
 
-        <div class="section" id="feedback">
-         <section id="feedbackSection">
+              <div id="sectionService" class="section">
+                <!-- SECTION SERVICES  -->
+                <section id="sectionService">
 
-            <div id=scrabble class="scrabble">
-            <img class="mentionLegal" onclick="location.href='docs/ML.pdf';" src="img/ML2.png"/>
-          </div>
+                    <div class="container">
+                      <div class = "blockNoteContainer">
 
-           <div id ="bookFeedbackID" class="bookFeedback">
-             <img class="magniflier" src="img/BookWithTextImg.png"/>
-             <!-- <div class="text-block">
-               <p>Anastasia is such a fun, caring,</p>
-               <p>enthusiastic, and rigorous teacher.</p>
-               <p>Anastasia ensures her students develop</p><p> strong French language skills</p>
-               <p>in all areas of reading, writing, </p><p>speaking, and listening by incorporating </p>
-               <p>methods and materials that would</p><p> work best for them.</p>
-               <br/><br/>
-               <p class="text-right">Sanghee Lee</p>
-            </div>
-            <div class="text-block2">
-              <p>Rapide dans l'exécution.</p>
-              <p>Travail conforme à mes attentes </p>
-              <p>et à celles du webmaster. </p>
-              <p>Tarifs plus que convenables. Je recommande</p>
-              <br/><br/>
-              <p class="text-right">Restaurant l’Insoumise,</p>
-              <p class="text-right">Paris (traduction FR-RU)</p>
-           </div>
-           <div class="text-block3">
-             <p>J'ai collaboré avec Anastasia en faisant appel</p>
-             <p> à elle en tant que formatrice pour un groupe</p>
-             <p> de stagiaires FLE niveau A1 à A2.</p>
-             <p> Elle a su relever le défi avec brio.</p>
-             <p> Son professionnalisme, sa rigueur et sa </p>
-             <p>bienveillance ont su porter le groupe tout</p>
-             <p> au long des 3 mois du parcours. </p>
-             <p>Anastasia applique des méthodes d'apprentissage</p><p> qui favorisent les échanges</p>
-             <p> à travers toutes sortes d'activités pédagogiques, </p>
-             <p>culturelles et ludiques.</p>
-             <p> Je referai appel à elle sans</p>
-             <p>hésiter quand l'occasion se présentera !</p>
-             <br/><br/>
-             <p class="text-right">Florence CROUZET,</p>
-             <p class="text-right">Human Booster</p>
-          </div> -->
-           </div>
-         </section>
-              <!-- SECTION Feedback -->
-
-              <!--<div id="retours" class="contact-info">
-                   <div class="container"> -->
-
-
-                       <!-- <div class="footer-col col-md-6 text-center">
-                          <h1>Nous rendre visite</h1>
-                              <address>
-                                  <strong>Frugal Solution</strong><br>
-                                  11 rue de Lille<br>
-                                  59000, Lille<br>
-                                  Tel: (+33) 320 000 000
-                                </address>
-
-                                <address>
-                                  <strong>Frugal Solution</strong><br>
-                                  <a href="mailto:#">contact@frugalsolution.com</a>
-                                </address>
+                        <div class = "box1">
+                          <div class="imgHover imgTransform1">
+                              <img id="imgBCaPropos" class="imgService" src="img/BN_Apropos.png">
+                          </div>
                         </div>
 
-                        <div class="footer-col col-md-6 text-center">
-                            <h1>Nous suivre</h1>
-                            <ul class="list-inline "> -->
+                        <div class = "box2">
+                          <div class="imgHover imgTransform2">
+                              <img id="imgBCEnsegment" class="imgService" src="img/BN_Enseignement.png">
+                          </div>
+                        </div>
 
-                                <!--  CI-DESSOUS POUR CHANGER LES LIENS VERS VOS RESEAUX SOCIAUX  :  href="ici votre lien " -->
-                              <!--  <li>
-                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-2x  fa-vine"></i></a>
-                                </li>
-                            </ul>
-                        </div> -->
+                        <div class = "box3">
+                          <div class="imgHover imgTransform3">
+                              <img id="imgBCTraduction" class="imgService" src="img/BN_Traduction.png">
+                          </div>
+                        </div>
 
-                 <!-- </div>
-            </div>-->
-          </div>
-
-          <!-- Footer
-          <footer class="navbar navbar-default navbar-static-bottom text-center" id="footer">
-            <div class="col-lg-12">
-              <p> <strong>&copy; Frugal Solution - 2015 </strong> </p>
+                        <div class = "box4">
+                          <div class="imgHover imgTransform4">
+                              <img id="imgBCContact" class="imgService" src="img/BN_Contact.png">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </section>
             </div>
-          </footer> -->
-  </div>
+
+
+            <div class="section" id="feedback">
+             <section id="feedbackSection">
+
+                 <div class="postIt">
+                  <p class="ml" onclick="location.href='docs/ML.pdf';">Mentions légales</p>
+                  <p class="cgv" onclick="location.href='docs/CGV.pdf';">CGV</p>
+                </div>
+
+               <div id ="bookFeedbackID" class="bookFeedback">
+                 <img class="magniflier" src="img/BookWithTextImg.png"/>
+
+               </div>
+             </section>
+                  <!-- SECTION Feedback -->
+
+                  <!--<div id="retours" class="contact-info">
+                       <div class="container"> -->
+
+
+                           <!-- <div class="footer-col col-md-6 text-center">
+                              <h1>Nous rendre visite</h1>
+                                  <address>
+                                      <strong>Frugal Solution</strong><br>
+                                      11 rue de Lille<br>
+                                      59000, Lille<br>
+                                      Tel: (+33) 320 000 000
+                                    </address>
+
+                                    <address>
+                                      <strong>Frugal Solution</strong><br>
+                                      <a href="mailto:#">contact@frugalsolution.com</a>
+                                    </address>
+                            </div>
+
+                            <div class="footer-col col-md-6 text-center">
+                                <h1>Nous suivre</h1>
+                                <ul class="list-inline "> -->
+
+                                    <!--  CI-DESSOUS POUR CHANGER LES LIENS VERS VOS RESEAUX SOCIAUX  :  href="ici votre lien " -->
+                                  <!--  <li>
+                                        <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline"><i class="fa fa-2x  fa-vine"></i></a>
+                                    </li>
+                                </ul>
+                            </div> -->
+
+                     <!-- </div>
+                </div>-->
+              </div>
+
+              <!-- Footer
+              <footer class="navbar navbar-default navbar-static-bottom text-center" id="footer">
+                <div class="col-lg-12">
+                  <p> <strong>&copy; Frugal Solution - 2015 </strong> </p>
+                </div>
+              </footer> -->
+      </div>
+    </div>
 
   <!-- ================================= MODALS ================================= -->
   <!-- Modal A Propos -->
@@ -200,8 +191,6 @@
     <div class="modal-dialog modal-lg">
       <!-- Modal content-->
       <div class="modal-content">
-        <!-- <div class="modal-header">
-        </div> -->
         <div class="modal-body">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h3 class="modal-title"><b>À propos</b></h3>
@@ -219,9 +208,6 @@
           <p class="gras_italique_serif"><i>« Grâce aux langues, on est chez soi n’importe où »</i> – Edmund de Waal</p>
           </br>
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div> -->
       </div>
     </div>
   </div>
@@ -231,8 +217,6 @@
     <div class="modal-dialog modal-lg">
       <!-- Modal content-->
       <div class="modal-content">
-        <!-- <div class="modal-header">
-        </div> -->
         <div class="modal-body">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h3 class="modal-title"><b>Enseignement</b></h3>
@@ -242,37 +226,24 @@
           </p>
         </br>
           <p class="bodyCenterPolice"><img  src="icon/photo.png" class="iconPolice"></img>&nbsp;Sorties culturelles individuelles ou en groupe sur la région de Montpellier</p>
-
           <p class="bodyCenterPolice"><img src = "icon/paris.png" class="iconPolice"></img>Cours de français langue étrangère tous niveaux</p>
-
           <p class="bodyCenterPolice"><img  src="icon/chat.png" class="iconPolice"></img>&nbsp;Cours particuliers ou en groupe (professionnel)</p>
-
           <p class="bodyCenterPolice"><img  src="icon/pdf.ico" class="iconPolice"></img>&nbsp;Ressources pédagogiques personnalisées</p>
-
           <p class="bodyCenterPolice"><img  src="icon/Graduation.png" class="iconPolice"></img>&nbsp;Préparation aux examens</p>
-
           <p class="bodyCenterPolice"><img  src="icon/check.png" class="iconPolice"></img>&nbsp;Cours de français sur objectifs spécifiques à la demande</p>
-
           <p class="bodyCenterPolice"><img  src="icon/mail.png" class="iconPolice"></img>&nbsp;Cours dispensés en ligne, chez vous ou bien dans vos locaux professionnels.</p>
-
           <p class="bodyCenterPolice"><b><u>Pour toutes demandes de tarifs, merci de me contacter par e-mail en expliquant vos besoins.</u></b></p>
           </br>
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div> -->
       </div>
     </div>
   </div>
-
 
   <!-- Modal Traduction -->
   <div id="traduction" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg">
       <!-- Modal content-->
       <div class="modal-content">
-        <!-- <div class="modal-header">
-        </div> -->
         <div class="modal-body">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h3 class="modal-title"><b>Traduction</b></h3>
@@ -290,9 +261,6 @@
           </br>
           <p><b><u>Anglais</u> : </b>Traduction et mise en page professionnelle de l’anglais vers le français ou vers le russe.</p>
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div> -->
       </div>
     </div>
   </div>
@@ -435,6 +403,7 @@
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
 
 
         <script type='text/javascript'>
