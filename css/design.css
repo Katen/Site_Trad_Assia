@@ -6,11 +6,11 @@
 
 
 body {
-display: none;
+
 }
 
 #page {
-
+display: none;
 }
 #loading {
     display: block;

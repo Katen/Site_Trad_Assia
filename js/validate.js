@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,16 +13,16 @@
 
 
   <link crossorigin="anonymous" media="all" integrity="sha512-hddDYPWR0gBbqLRmIZP242WMEiYsVkYI2UCYCVUHB4h5DhD2cbtFJYG+HPh21dZGb+sbgDHxQBNJCBq7YbmlBQ==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-02a3eaa24db2bd1ed9b64450595fc2cf.css" />
-  
+
     <link crossorigin="anonymous" media="all" integrity="sha512-w6MCgIBwUUYbeW523O/wvoesRp6FEf5HDYon7qQm3y7AXuEq6zhX2ybrH2LSOhqMyw/2Sq5XxXfWbwvSxW6wKg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-779aad95cc5fb5f691f6c8d2be68ff59.css" />
-    
-    
-    
-    
+
+
+
+
 
 
   <meta name="viewport" content="width=device-width">
-  
+
   <title>ansman/validate.js: A declarative validation library written javascript</title>
     <meta name="description" content="A declarative validation library written javascript - ansman/validate.js">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
@@ -46,7 +40,7 @@
 
 
 
-  
+
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
 
@@ -68,7 +62,7 @@
 
 
 
-  
+
 
       <meta name="hostname" content="github.com">
     <meta name="user-login" content="Katen">
@@ -82,7 +76,7 @@
     <meta name="html-safe-nonce" content="10392bbbfc892724a8ce2cd9e70acc1e0e251701">
 
   <meta http-equiv="x-pjax-version" content="74746d2dc6f16ce93a5dcddd099780a1">
-  
+
 
       <link href="https://github.com/ansman/validate.js/commits/master.atom" rel="alternate" title="Recent Commits to validate.js:master" type="application/atom+xml">
 
@@ -109,7 +103,7 @@
   </head>
 
   <body class="logged-in env-production min-width-lg">
-    
+
 
   <div class="position-relative js-header-wrapper ">
     <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
@@ -117,9 +111,9 @@
       <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
     </span>
 
-    
-    
-    
+
+
+
 
 
           <header class="Header" role="banner">
@@ -163,9 +157,9 @@
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
             <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
-              
+
 <ul class="d-none js-jump-to-suggestions-template-container">
-  
+
 
 <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
   <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
@@ -206,7 +200,7 @@
 </ul>
 
 <ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
-  
+
 
 <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
   <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
@@ -238,7 +232,7 @@
   </a>
 </li>
 
-  
+
 
 <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
   <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
@@ -293,7 +287,7 @@
     <div class="mr-3">
       <a class="js-selected-navigation-item Header-link" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
         Marketplace
-</a>      
+</a>
 
     </div>
 
@@ -308,7 +302,7 @@
 
 
     <div class="Header-item">
-      
+
 
     <a aria-label="You have no unread notifications" class="Header-link notification-indicator position-relative tooltipped tooltipped-sw js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="notification-changed:4282670" href="/notifications">
         <span class="mail-status "></span>
@@ -325,7 +319,7 @@
     <svg class="octicon octicon-plus" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"/></svg> <span class="dropdown-caret"></span>
   </summary>
   <details-menu class="dropdown-menu dropdown-menu-sw">
-    
+
 <a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
   New repository
 </a>
@@ -358,7 +352,7 @@
     </div>
 
     <div class="Header-item position-relative mr-0">
-      
+
   <details class="details-overlay details-reset js-feature-preview-indicator-container" data-feature-preview-indicator-src="/users/Katen/feature_preview/indicator_check.json">
 
   <summary class="Header-link"
@@ -373,7 +367,7 @@
     <div role="none" class="dropdown-divider"></div>
 
       <div class="pl-3 pr-3 f6 user-status-container js-user-status-context pb-1" data-url="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1">
-        
+
 <div class="js-user-status-container
     user-status-compact rounded-1 px-2 py-1 mt-2
     border
@@ -395,9 +389,9 @@
         </div>
         <div class="
           d-inline-block v-align-middle
-          
-          
-           css-truncate css-truncate-target 
+
+
+           css-truncate css-truncate-target
            user-status-message-wrapper f6"
            style="line-height: 20px;" >
           <div class="d-inline-block text-gray-dark v-align-text-top text-left">
@@ -503,7 +497,7 @@
               </div>
             </div>
           </div>
-            
+
 
 <div class="d-inline-block f5 mr-2 pt-3 pb-2" >
   <div class="d-inline-block mr-1">
@@ -588,7 +582,7 @@
 
 
     <div role="none" class="dropdown-divider"></div>
-      
+
 <div id="feature-enrollment-toggle" class="hide-sm hide-md feature-preview-details position-relative">
   <button
     type="button"
@@ -608,7 +602,7 @@
     <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
     <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
     <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="4OKLFqzh5c+zE5vqiw4bJMaFiIa9MVtqC5lX02aw2IPvtXDIDqFivLg38Rd/5TbivygxsCWs3bD1CQF6xOtX8Q==" />
-      
+
       <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
         Sign out
       </button>
@@ -623,7 +617,7 @@
 
   </header>
 
-      
+
 
   </div>
 
@@ -639,8 +633,8 @@
   <div class="application-main " data-commit-hovercards-enabled>
         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
     <main id="js-repo-pjax-container" data-pjax-container >
-      
-  
+
+
 
 
 
@@ -665,7 +659,7 @@
   <strong itemprop="name" class="mr-2">
     <a data-pjax="#js-repo-pjax-container" href="/ansman/validate.js">validate.js</a>
   </strong>
-  
+
 </h1>
 
 
@@ -676,7 +670,7 @@
 
 
     <li >
-      
+
     <details class="dropdown details-reset details-overlay d-inline-block float-left"
       data-deferred-details-content-url="/ansman/validate.js/used_by_contents"
     >
@@ -704,7 +698,7 @@
     </li>
 
   <li>
-    
+
     <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="xBun1Weay+ieyUY0NMUD0qPRAcWtAvNZ97VH0LsIRfLCW5rjlN8+MWzBWO1bbzJqcHwSKoUkt7svsjoDfy9U1g==" />      <input type="hidden" name="repository_id" value="24815545">
 
       <details class="details-reset details-overlay select-menu float-left">
@@ -815,7 +809,7 @@
 </ul>
 
     </div>
-    
+
 <nav class="hx_reponav reponav js-repo-nav js-sidenav-container-pjax clearfix container-lg px-3"
      itemscope
      itemtype="http://schema.org/BreadcrumbList"
@@ -879,9 +873,9 @@
 <div class="container-lg clearfix new-discussion-timeline experiment-repo-nav  px-3">
   <div class="repository-content ">
 
-    
-    
-    
+
+
+
 
       <div class="mb-3">  <div class="f4">
         <span class="text-gray-dark mr-2" itemprop="about">
@@ -992,7 +986,7 @@
     </div>
 
   <div class="file-navigation in-mid-page d-flex flex-items-start">
-  
+
 <details class="details-reset details-overlay select-menu branch-select-menu  hx_rsm" id="branch-select-menu">
   <summary class="btn btn-sm select-menu-button css-truncate"
            data-hotkey="w"
@@ -1012,18 +1006,18 @@
         <a class="btn btn-sm new-pull-request-btn" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;NEW_PULL_REQUEST_BUTTON&quot;,&quot;repository_id&quot;:24815545,&quot;client_id&quot;:&quot;1333878052.1578678114&quot;,&quot;originating_request_id&quot;:&quot;D313:456D8:117A0B6:1A152CE:5E1E143A&quot;,&quot;originating_url&quot;:&quot;https://github.com/ansman/validate.js&quot;,&quot;referrer&quot;:&quot;https://github.com/ansman/validate.js/blob/master/validate.js&quot;,&quot;user_id&quot;:4282670}}" data-hydro-click-hmac="d93d179765dd8c95fa02c23989675f6e5740ac1e2f35651c41d623f8402779d0" data-ga-click="Repository, new pull request, location:repo overview" data-pjax="true" href="/ansman/validate.js/pull/new/master">New pull request</a>
 
   <div class="breadcrumb flex-auto">
-    
+
   </div>
 
   <div class="BtnGroup">
-      
+
   <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="BtnGroup-parent" action="/ansman/validate.js/new/master" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="oDoIISsTq1bsirUINOuRJNU2ZghOOC8Vj9OkmBHpMBRDTA35qEZVCcqbB18DD0xusaJ5e+3HMMI74pYQsb6Z2g==" />
     <button class="btn btn-sm BtnGroup-item" type="submit" data-disable-with="Creating file…">
       Create new file
     </button>
 </form>
 
-      
+
   <a href="/ansman/validate.js/upload/master" class="btn btn-sm BtnGroup-item">
     Upload files
   </a>
@@ -1032,10 +1026,10 @@
     <a class="btn btn-sm empty-icon float-right BtnGroup-item" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:24815545,&quot;client_id&quot;:&quot;1333878052.1578678114&quot;,&quot;originating_request_id&quot;:&quot;D313:456D8:117A0B6:1A152CE:5E1E143A&quot;,&quot;originating_url&quot;:&quot;https://github.com/ansman/validate.js&quot;,&quot;referrer&quot;:&quot;https://github.com/ansman/validate.js/blob/master/validate.js&quot;,&quot;user_id&quot;:4282670}}" data-hydro-click-hmac="5fffe2affe7c27c47505954651dd3dcd2b430ef3d483a30c189f56769c7509a6" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="/ansman/validate.js/find/master">Find file</a>
   </div>
 
-  
 
 
-    
+
+
 
     <details class="get-repo-select-menu js-get-repo-select-menu  position-relative details-overlay details-reset">
   <summary class="btn btn-sm ml-2 btn-primary" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;repository_id&quot;:24815545,&quot;target&quot;:&quot;CLONE_OR_DOWNLOAD_BUTTON&quot;,&quot;client_id&quot;:&quot;1333878052.1578678114&quot;,&quot;originating_request_id&quot;:&quot;D313:456D8:117A0B6:1A152CE:5E1E143A&quot;,&quot;originating_url&quot;:&quot;https://github.com/ansman/validate.js&quot;,&quot;referrer&quot;:&quot;https://github.com/ansman/validate.js/blob/master/validate.js&quot;,&quot;user_id&quot;:4282670}}" data-hydro-click-hmac="3d2337218be4ba915840a62b664dc0b7591c7fdb51c55611efec5555eac894e8">
@@ -1133,11 +1127,11 @@
 </div>
 
 
-  
+
 
 
   <div class="commit-tease js-details-container Details d-flex rounded-top-1" data-issue-and-pr-hovercards-enabled>
-    
+
 <div class="AvatarStack flex-self-start ">
   <div class="AvatarStack-body" aria-label="ansman">
         <a class="avatar" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/ansman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/ansman">
@@ -1146,13 +1140,13 @@
 </div>
 
     <div class="flex-auto f6 mr-3">
-      
+
       <a href="/ansman/validate.js/commits?author=ansman"
      class="commit-author tooltipped tooltipped-s user-mention"
      aria-label="View all commits by ansman">ansman</a>
 
 
-  
+
 
 
         <a data-pjax="true" title="Prepare for the next development version" class="message text-inherit" href="/ansman/validate.js/commit/c64df5dad1a1908a6bdb36ca3d01063cf6b8d3bc">Prepare for the next development version</a>
@@ -1663,11 +1657,11 @@ with the name and optionally a URL to the project and it will be added here.</p>
 
     </main>
   </div>
-  
+
 
   </div>
 
-        
+
 <div class="footer container-lg width-full px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
@@ -1708,13 +1702,13 @@ with the name and optionally a URL to the project and it will be added here.</p>
   </div>
 
 
-    
+
     <script crossorigin="anonymous" integrity="sha512-/VSJJF96vCzSgC6y09Z4FqzjjuXRWOKIq2twF0Nb5/v8xy4qzngnH6Au6TFwbmNN/lborYJsojEpgIbYjoGvHQ==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-fd548924.js"></script>
-    
+
     <script crossorigin="anonymous" async="async" integrity="sha512-vZhZSTu0x2QIaxou1zuQc2V/9LXe5o1GfMJpOGIO4Xezrj2GRCUVwXpMxqfsoBYNZN0BORS9xCYBYWWoti7dDg==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-bd985949.js"></script>
-    
-    
-    
+
+
+
   <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
     >
     <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
@@ -1742,4 +1736,3 @@ with the name and optionally a URL to the project and it will be added here.</p>
 
   </body>
 </html>
-
