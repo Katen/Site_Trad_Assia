@@ -26,164 +26,182 @@
         <!-- liens vers pagepiling effet-->
         <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/alvarotrigo/pagePiling.js/master/jquery.pagepiling.css">
 
+        <!-- Loading script while fully loaded page -->
         <script>
-          function onReady(callback) {
-          var intervalID = window.setInterval(checkReady, 2000);
+          (function(){
+            function id(param){return document.getElementById(param); }
+            function loadbar() {
+              var overload = id("overlay"),
+                  progress = id("progress"),
+                  stat = id("progstat"),
+                  img = document.images,
+                  counter= 0;
+                  tot = img.length;
 
-          function checkReady() {
-                if (document.getElementsByTagName('body')[0] !== undefined) {
-                    window.clearInterval(intervalID);
-                    callback.call(this);
-                }
+              function imgLoaded(){
+                counter += 1;
+                var percent = ((100/tot*counter) << 0) +"%";
+                progress.style.width = percent;
+                stat.innerHTML = "Loading "+ percent;
+                if(counter===tot) return doneLoading();
+              }
+              function doneLoading(){
+                overload.style.opacity = 0;
+                setTimeout(function(){
+                  overload.style.display = "none";
+                }, 1300);
+              }
+              for(var i=0; i<tot; i++) {
+                var tImg     = new Image();
+                tImg.onload  = imgLoaded;
+                tImg.onerror = imgLoaded;
+                tImg.src     = img[i].src;
+              }
             }
-          }
-
-          function show(id, value) {
-            document.getElementById(id).style.display = value ? 'block' : 'none';
-          }
-
-          onReady(function () {
-            show('page', true);
-            show('loading', false);
-          });
+            document.addEventListener('DOMContentLoaded', loadbar, false);
+          }());
         </script>
-
     </head>
 
     <body>
 
-    <div id="page">
-          <div id="pagepiling">
-                <!-- Navbar -->
-            		<div class="navbar navbar-inverse" role="navigation" id="navbar">
-            			<div class="container" >
-            				<div class="navbar-header page-scroll">
-                      <h4 >
-                        <font color="white"> Anastasia Vasina</font>
-                      </h4>
-                        <h5>
-                          <font color="white"> Translation & Teaching</span>
-                        </h5>
-            				</div>
-            				  <div class="collapse navbar-collapse" id="collapse-menu">
-            					<ul class="nav navbar-nav navbar-right">
-                        <li data-menuanchor="Home"><a href="#Home">Accueil</a></li>
-                        <li data-menuanchor="page2"><a href="#page2">Informations</a></li>
-                        <li data-menuanchor="page3"><a href="#page3">Feedback</a></li>
-            					</ul>
-            				</div>
-            			</div>
-            		</div>
-
-              <!-- SECTION ACCUEIL  -->
-               <section id="mainsection" class="section">
-                 <div class ="linkToFeedback" onclick="location.href='#page3';"></div>
-                 <div id="typewriter" class="auto_write"></div>
-                </section>
+    <div id="overlay">
+            <div id="progstat"></div>
+            <div id="progress"></div>
+    </div>
 
 
-              <div id="sectionService" class="section">
-                <!-- SECTION SERVICES  -->
-                <section id="sectionService">
+    <div id="pagepiling">
+              <!-- Navbar -->
+          		<div class="navbar navbar-inverse" role="navigation" id="navbar">
+          			<div class="container" >
+          				<div class="navbar-header page-scroll">
+                    <h4 >
+                      <font color="white"> Anastasia Vasina</font>
+                    </h4>
+                      <h5>
+                        <font color="white"> Translation & Teaching</span>
+                      </h5>
+          				</div>
+          				  <div class="collapse navbar-collapse" id="collapse-menu">
+          					<ul class="nav navbar-nav navbar-right">
+                      <li data-menuanchor="Home"><a href="#Home">Accueil</a></li>
+                      <li data-menuanchor="page2"><a href="#page2">Informations</a></li>
+                      <li data-menuanchor="page3"><a href="#page3">Feedback</a></li>
+          					</ul>
+          				</div>
+          			</div>
+          		</div>
 
-                    <div class="container">
-                      <div class = "blockNoteContainer">
+            <!-- SECTION ACCUEIL  -->
+             <section id="mainsection" class="section">
+               <div class ="linkToFeedback" onclick="location.href='#page3';"></div>
+               <div id="typewriter" class="auto_write"></div>
+              </section>
 
-                        <div class = "box1">
-                          <div class="imgHover imgTransform1">
-                              <img id="imgBCaPropos" class="imgService" src="img/BN_Apropos.png">
-                          </div>
+
+            <div id="sectionService" class="section">
+              <!-- SECTION SERVICES  -->
+              <section id="sectionService">
+
+                  <div class="container">
+                    <div class = "blockNoteContainer">
+
+                      <div class = "box1">
+                        <div class="imgHover imgTransform1">
+                            <img id="imgBCaPropos" class="imgService" src="img/BN_Apropos.png">
                         </div>
+                      </div>
 
-                        <div class = "box2">
-                          <div class="imgHover imgTransform2">
-                              <img id="imgBCEnsegment" class="imgService" src="img/BN_Enseignement.png">
-                          </div>
+                      <div class = "box2">
+                        <div class="imgHover imgTransform2">
+                            <img id="imgBCEnsegment" class="imgService" src="img/BN_Enseignement.png">
                         </div>
+                      </div>
 
-                        <div class = "box3">
-                          <div class="imgHover imgTransform3">
-                              <img id="imgBCTraduction" class="imgService" src="img/BN_Traduction.png">
-                          </div>
+                      <div class = "box3">
+                        <div class="imgHover imgTransform3">
+                            <img id="imgBCTraduction" class="imgService" src="img/BN_Traduction.png">
                         </div>
+                      </div>
 
-                        <div class = "box4">
-                          <div class="imgHover imgTransform4">
-                              <img id="imgBCContact" class="imgService" src="img/BN_Contact.png">
-                          </div>
+                      <div class = "box4">
+                        <div class="imgHover imgTransform4">
+                            <img id="imgBCContact" class="imgService" src="img/BN_Contact.png">
                         </div>
                       </div>
                     </div>
-              </section>
-            </div>
+                  </div>
+            </section>
+          </div>
 
 
-            <div class="section" id="feedback">
-             <section id="feedbackSection">
+          <div class="section" id="feedback">
+           <section id="feedbackSection">
 
-                 <div class="postIt">
-                  <p class="ml" onclick="location.href='docs/ML.pdf';">Mentions légales</p>
-                  <p class="cgv" onclick="location.href='docs/CGV.pdf';">CGV</p>
-                </div>
-
-               <div id ="bookFeedbackID" class="bookFeedback">
-                 <img class="magniflier" src="img/BookWithTextImg.png"/>
-
-               </div>
-             </section>
-                  <!-- SECTION Feedback -->
-
-                  <!--<div id="retours" class="contact-info">
-                       <div class="container"> -->
-
-
-                           <!-- <div class="footer-col col-md-6 text-center">
-                              <h1>Nous rendre visite</h1>
-                                  <address>
-                                      <strong>Frugal Solution</strong><br>
-                                      11 rue de Lille<br>
-                                      59000, Lille<br>
-                                      Tel: (+33) 320 000 000
-                                    </address>
-
-                                    <address>
-                                      <strong>Frugal Solution</strong><br>
-                                      <a href="mailto:#">contact@frugalsolution.com</a>
-                                    </address>
-                            </div>
-
-                            <div class="footer-col col-md-6 text-center">
-                                <h1>Nous suivre</h1>
-                                <ul class="list-inline "> -->
-
-                                    <!--  CI-DESSOUS POUR CHANGER LES LIENS VERS VOS RESEAUX SOCIAUX  :  href="ici votre lien " -->
-                                  <!--  <li>
-                                        <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-linkedin"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="btn-social btn-outline"><i class="fa fa-2x  fa-vine"></i></a>
-                                    </li>
-                                </ul>
-                            </div> -->
-
-                     <!-- </div>
-                </div>-->
+               <div class="postIt">
+                <p class="ml" onclick="location.href='docs/ML.pdf';"> - Mentions légales</p>
+                <p class="cgv" onclick="location.href='docs/CGV.pdf';"> - CGV</p>
               </div>
 
-              <!-- Footer
-              <footer class="navbar navbar-default navbar-static-bottom text-center" id="footer">
-                <div class="col-lg-12">
-                  <p> <strong>&copy; Frugal Solution - 2015 </strong> </p>
-                </div>
-              </footer> -->
-      </div>
+             <div id ="bookFeedbackID" class="bookFeedback">
+               <img class="magniflier" src="img/BookWithTextImg.png"/>
+
+             </div>
+           </section>
+                <!-- SECTION Feedback -->
+
+                <!--<div id="retours" class="contact-info">
+                     <div class="container"> -->
+
+
+                         <!-- <div class="footer-col col-md-6 text-center">
+                            <h1>Nous rendre visite</h1>
+                                <address>
+                                    <strong>Frugal Solution</strong><br>
+                                    11 rue de Lille<br>
+                                    59000, Lille<br>
+                                    Tel: (+33) 320 000 000
+                                  </address>
+
+                                  <address>
+                                    <strong>Frugal Solution</strong><br>
+                                    <a href="mailto:#">contact@frugalsolution.com</a>
+                                  </address>
+                          </div>
+
+                          <div class="footer-col col-md-6 text-center">
+                              <h1>Nous suivre</h1>
+                              <ul class="list-inline "> -->
+
+                                  <!--  CI-DESSOUS POUR CHANGER LES LIENS VERS VOS RESEAUX SOCIAUX  :  href="ici votre lien " -->
+                                <!--  <li>
+                                      <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-linkedin"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-facebook"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="btn-social btn-outline"><i class="fa fa-2x fa-twitter"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="btn-social btn-outline"><i class="fa fa-2x  fa-vine"></i></a>
+                                  </li>
+                              </ul>
+                          </div> -->
+
+                   <!-- </div>
+              </div>-->
+            </div>
+
+            <!-- Footer
+            <footer class="navbar navbar-default navbar-static-bottom text-center" id="footer">
+              <div class="col-lg-12">
+                <p> <strong>&copy; Frugal Solution - 2015 </strong> </p>
+              </div>
+            </footer> -->
     </div>
+
 
   <!-- ================================= MODALS ================================= -->
   <!-- Modal A Propos -->
@@ -226,7 +244,7 @@
           </p>
         </br>
           <p class="bodyCenterPolice"><img  src="icon/photo.png" class="iconPolice"></img>&nbsp;Sorties culturelles individuelles ou en groupe sur la région de Montpellier</p>
-          <p class="bodyCenterPolice"><img src = "icon/paris.png" class="iconPolice"></img>Cours de français langue étrangère tous niveaux</p>
+          <p class="bodyCenterPolice"><img  src="icon/paris.png" class="iconPolice"></img>Cours de français langue étrangère tous niveaux</p>
           <p class="bodyCenterPolice"><img  src="icon/chat.png" class="iconPolice"></img>&nbsp;Cours particuliers ou en groupe (professionnel)</p>
           <p class="bodyCenterPolice"><img  src="icon/pdf.ico" class="iconPolice"></img>&nbsp;Ressources pédagogiques personnalisées</p>
           <p class="bodyCenterPolice"><img  src="icon/Graduation.png" class="iconPolice"></img>&nbsp;Préparation aux examens</p>

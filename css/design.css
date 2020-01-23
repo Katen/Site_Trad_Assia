@@ -6,29 +6,38 @@
 
 
 body {
-
 }
 
-#page {
-display: none;
+#overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:url(../loader/loader.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: 1s 0.7s;
 }
-#loading {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100vw;
-    height: 100vh;
-    background-color: green;
-    /* background: url(../img/loader.gif); */
-    background-repeat: no-repeat;
-    background-position: center;
-
-    background: url(../img/coffee-mac_15ips.gif);
-    background-size: 100%;
-    background-position: center center;
-    background-size: cover;
+#progress{
+  color: black;
+  height:1px;
+  background:black;
+  position:absolute;
+  width:0;
+  top:70%;
+}
+#progstat{
+  font-size:1.7em;
+  letter-spacing: 3px;
+  position:absolute;
+  top:68%;
+  margin-top:-40px;
+  width:100%;
+  text-align:center;
+  color:black;
 }
 
 @keyframes spin {
