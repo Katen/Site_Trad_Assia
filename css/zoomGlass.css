@@ -7,7 +7,7 @@
    transform: scale(0.5);
   border-radius: 50%;
   cursor:none;
-  z-index: 777;
+  z-index: 5;
   /* Multiple box shadows to achieve the glass effect */
   box-shadow:
     0 0 0 7px rgba(255, 255, 255, 0.85),
