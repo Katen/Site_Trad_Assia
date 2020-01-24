@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css?family=Quantico&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600');
 
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap');
 
 body {
 }
@@ -395,7 +396,7 @@ section {
 }
 .modal-content p{
   color: black;
-  font-size: 16px;
+  font-size: 19px;
 }
 
 .bodyCenterPolice{
@@ -446,6 +447,10 @@ section {
    /* background-repeat: repeat; */
 }
 
+.text-muted{
+  font-family: "Amatic SC", cursive !important;
+}
+
 /* SECTION CONTACT */
 #contact {
   /* padding-top : 3%; */
@@ -494,12 +499,24 @@ section {
 .postIt:hover{
   transform: scale(1.2);
 }
+.liensUtils{
+  top: 10%;
+  left: 12%;
+}
+.liensUtils:hover{
+  cursor:default;
+}
+
+.blog{
+  top: 25%;
+  left: 15%;
+}
 .ml{
-  top: 30%;
+  top: 45%;
   left: 15%;
 }
 .cgv{
-  top: 50%;
+  top: 65%;
   left: 15%;
 }
 
