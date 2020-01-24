@@ -8,6 +8,15 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap');
 
 body {
+    font-family: "Indie Flower", cursive !important;
+}
+
+h4 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 26px;
+  line-height: 1px;
+  font-family: "Amatic SC", cursive !important;
 }
 
 #overlay{
@@ -346,8 +355,8 @@ section {
 .imgHover img{
 	-webkit-transform: scale(1);
   transform: scale(1);
-	-webkit-transition: .1s ease-in-out;
-	transition: .1s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
   /* border:2px solid #1C1A19; */
   box-shadow: 10px 10px 10px #1C1A19;
   -moz-box-shadow: 10px 10px 10px #1C1A19;
@@ -396,7 +405,7 @@ section {
 }
 .modal-content p{
   color: black;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .bodyCenterPolice{
