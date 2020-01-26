@@ -1,4 +1,4 @@
-$(function() {
+function zoom() {
 
 var native_width = 0;
 var native_height = 0;
@@ -84,4 +84,4 @@ ui.glass.on('mouseout', function() {
   ui.glass.off('mousemove', mouseMove);
 });
 
-});
+};
