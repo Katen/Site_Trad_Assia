@@ -99,7 +99,7 @@ section {
     background-size: cover;
     background-color: #464646;
     -webkit-perspective: 100px; /* Safari 4-8  */
-    perspective: 100px; */
+    perspective: 100px;
 }
 
 
