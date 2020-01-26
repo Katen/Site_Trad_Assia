@@ -1,0 +1,27 @@
+
+
+.glass {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+   transform: scale(0.5);
+  border-radius: 50%;
+  cursor:none;
+  z-index: 5;
+  /* Multiple box shadows to achieve the glass effect */
+  box-shadow:
+    0 0 0 7px rgba(255, 255, 255, 0.85),
+    0 0 7px 7px rgba(0, 0, 0, 0.25),
+    inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /* hide the glass by default */
+  display: none;
+}
+
+
+
+/* body {
+  cursor: url(icon/test.ico), auto;
+  font-family: helvetica;
+  background: #eee;
+  text-align: center;
+} */
