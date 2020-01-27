@@ -375,13 +375,6 @@
         </div>
       </div>
 
-  <!-- Modal feedback book for mobile platformes -->
-  <div id="mobileFeedbackBook" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-  </div>
-
   <!-- ================================= End MODALS ================================= -->
 
         <!-- Script Javascript -->
@@ -408,7 +401,7 @@
             $(".social.linkedin").toggleClass("clicked");
           })
         </script>
-        <script type='text/javascript'>
+        <!-- <script type='text/javascript'>
           const typewriter = new Typewriter('#typewriter', {
             loop: false
           });
@@ -420,7 +413,7 @@
             .typeString('Je vous souhaite une agréable visite !')
             .pauseFor(3500)
             .start();
-        </script>
+        </script> -->
         <script type="text/javascript">
            $(document).ready(function() {
                $('#pagepiling').pagepiling({
@@ -456,79 +449,29 @@
         </script>
         <script>
         $(function () {
-          alert("Start");
           if(mobileAndTabletcheck() == false){
-            alert("mobileAndTabletcheck is FALSE");
             zoom();
           }else if(mobileAndTabletcheck() == true){
-            alert("mobileAndTabletcheck is TRUE");
-            var modal = document.getElementById("mobileFeedbackBook");
+
+            var isZoomed = false;
             var img = document.getElementById("imgFeedbackBook");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = this.alt;
-            }
-            var span = document.getElementsByClassName("close")[0];
-            span.onclick = function() {
-              modal.style.display = "none";
-            }
-
-            var style = document.createElement('style');
-            style.type = 'text/css';
-            style.innerHTML = '#imgFeedbackBook {border-radius: 5px; cursor: pointer; transition: 0.3s;}';
-            document.getElementsByTagName('head')[0].appendChild(style);
-
-            var style2 = document.createElement('style');
-            style2.type = 'text/css';
-            style2.innerHTML = '#imgFeedbackBook:hover {opacity: 0.7;}';
-            document.getElementsByTagName('head')[0].appendChild(style2);
-
-            var style3 = document.createElement('style');
-            style3.type = 'text/css';
-            style3.innerHTML = '.modal {display: none; position: fixed; z-index: 1; padding-top: 100px; left: 0; top: 0; width: 40%; height: 40%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.9); }';
-            document.getElementsByTagName('head')[0].appendChild(style3);
-
-            var style4 = document.createElement('style');
-            style4.type = 'text/css';
-            style4.innerHTML = '#mobileFeedbackBook.modal-content {margin: auto; display: block; width: 40%; max-width: 50%; }';
-            document.getElementsByTagName('head')[0].appendChild(style4);
-
-            var style5 = document.createElement('style');
-            style5.type = 'text/css';
-            style5.innerHTML = '#caption { margin: auto; display: block; width: 80%; max-width: 700px; text-align: center; color: #ccc; padding: 10px 0; height: 150px; -webkit-animation-name: zoom; -webkit-animation-duration: 0.6s; animation-name: zoom; animation-duration: 0.6s;}';
-            document.getElementsByTagName('head')[0].appendChild(style5);
-
-            var style6 = document.createElement('style');
-            style6.type = 'text/css';
-            style6.innerHTML = '@-webkit-keyframes zoom {from {-webkit-transform:scale(0)} to {-webkit-transform:scale(0.2)}}';
-            document.getElementsByTagName('head')[0].appendChild(style6);
-
-            var style7 = document.createElement('style');
-            style7.type = 'text/css';
-            style7.innerHTML = '@keyframes zoom {from {transform:scale(0)} to {transform:scale(0.2)}}';
-            document.getElementsByTagName('head')[0].appendChild(style7);
-
-            var style8 = document.createElement('style');
-            style8.type = 'text/css';
-            style8.innerHTML = '.close { position: absolute; top: 15px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; transition: 0.3s;}';
-            document.getElementsByTagName('head')[0].appendChild(style8);
-
-            var style9 = document.createElement('style');
-            style9.type = 'text/css';
-            style9.innerHTML = '@media only screen and (max-width: 700px){.modal-content {width: 100%;}';
-            document.getElementsByTagName('head')[0].appendChild(style9);
-
-            var style10 = document.createElement('style');
-            style10.type = 'text/css';
-            style10.innerHTML = '.close:hover, .close:focus {color: #bbb; text-decoration: none; cursor: pointer;}';
-            document.getElementsByTagName('head')[0].appendChild(style10);
-           }
-
-           //see also https://stackoverflow.com/questions/39858998/zoom-in-and-out-on-mouse-click-with-css/39859268
-
+            img.addEventListener("click", function zoomOnClick(){
+                if(isZoomed == false){
+                    var style = document.createElement('style');
+                    style.type = 'text/css';
+                    style.innerHTML = '#imgFeedbackBook {transform: scale(1.5);}';
+                    document.getElementsByTagName('head')[0].appendChild(style);
+                    isZoomed = true;
+                  }
+                else if(isZoomed == true){
+                    var style = document.createElement('style');
+                    style.type = 'text/css';
+                    style.innerHTML = '#imgFeedbackBook {transform: scale(1);}';
+                    document.getElementsByTagName('head')[0].appendChild(style);
+                    isZoomed = false;
+                  }
+              }, false);
+          }
           });
         </script>
         <script>
