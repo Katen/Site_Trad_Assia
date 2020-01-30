@@ -11,6 +11,9 @@
    $mailClient = $_POST['email'];
    $name = $_POST['name'];
    $surname = $_POST['surname'];
+   $okMessage = 'Le formulaire de contact a été soumis avec succès, je vous recontacterai bientôt !';
+   $errorMessage = 'Il y a eu une erreur lors de l\'envoi du formulaire. Veuillez réessayer plus tard.';
+
    $mail_Data = "";
    $mail_Data .= "<html> \n";
    $mail_Data .= "<head> \n";
@@ -37,12 +40,32 @@
    $headers .= "X-MSMail-Priority: High \n";
    $CR_Mail = TRUE;
    $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
-   if ($CR_Mail === FALSE)
-      {
-      echo " ### CR_Mail=$CR_Mail - Erreur envoi mail <br> \n";
-      }
-   else
-      {
-      echo " *** CR_Mail=$CR_Mail - Mail envoyé<br> \n";
-      }
+   // if ($CR_Mail === FALSE)
+   //    {
+   //     echo " ### CR_Mail=$CR_Mail - Erreur envoi mail <br> \n";
+   //    }
+   // else
+   //    {
+   //    echo " *** CR_Mail=$CR_Mail - Mail envoyé<br> \n";
+   //    }
+
+  if ($CR_Mail === FALSE){
+    $responseArray = array('type' => 'success', 'message' => $okMessage);
+  }else{
+    $responseArray = array('type' => 'danger', 'message' => $e->getMessage());
+  }
+
+   // if requested by AJAX request return JSON response
+   if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+   $encoded = json_encode($responseArray);
+
+   header('Content-Type: application/json');
+
+   echo $encoded;
+   }
+   // else just display the message
+   else {
+   echo $responseArray['message'];
+   }
+
 ?>
