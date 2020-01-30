@@ -534,7 +534,7 @@ section {
   left: 45%;
   top: 8%;
   width: 10%;
-  height: 33%;
+  height: 23%;
   min-width: 70px;
   min-height: 210px;
   -webkit-transform:rotate(50deg);
@@ -554,6 +554,46 @@ section {
   background-repeat: no-repeat;
 }
 
+/*Follow button version mobile */
+.btn-facebook {
+  position: relative;
+    top: -130px;
+    left: 1.5vw;
+	  background: #3B5998;
+	  border-radius: 0;
+	  color: #fff;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #263961;
+	}
+	.btn-facebook:link, .btn-facebook:visited {
+	  color: #fff;
+	}
+	.btn-facebook:active, .btn-facebook:hover {
+	  background: #263961;
+	  color: #fff;
+	}
+
+.btn-twitter {
+  position: relative;
+    top: -150px;
+    left: 1.5vw;
+	  background: #3B5998;
+	  border-radius: 0;
+	  color: #fff;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #263961;
+	}
+	.btn-twitter:link, .btn-twitter:visited {
+	  color: #fff;
+	}
+	.btn-twitter:active, .btn-twitter:hover {
+	  background: #263961;
+	  color: #fff;
+	}
+
+/* Follow button version desctop*/
 .phoneFollow {
   font-family: 'Source Sans Pro', sans-serif;
   display:flex;
@@ -565,12 +605,12 @@ section {
 
 .button {
   top: 4vw;
-  left: 1.3vw;
+  left: 1.4vw;
   z-index: 5;
   position: absolute;
   display: flex;
   justify-content: center;
-  /*align-items: center; */
+  align-items: center;
   width: 5vw;
   height: 1.5vw;
   min-width: 45px;
@@ -581,15 +621,6 @@ section {
   font-size: 0.7vw;
   letter-spacing: 1px;
   font-weight: 200;
-}
-
-@media only screen and (min-width: 120px) and (max-width: 520px){
-  .button {
-      top: 7vw;
-      left: 2.3vw;
-      font-size: 7px;
-  }
-/* TODO .social css */
 }
 
 .social {
@@ -606,6 +637,7 @@ section {
   font-size: 1.1vw;
   text-align: center;
   right: 0.6vw;
+  z-index: 2;
 }
 .social i {
    margin-top: 0.5vw;
@@ -613,6 +645,35 @@ section {
 .social a {
     color: #FFF;
   }
+
+
+@media only screen and (min-width: 1550px) and (max-width: 2000px){
+    .button {
+        width: 4vw;
+        top:3vw;
+        left: 0.9vw;
+    }
+    .social {
+      top: -1vw;
+      left: -2vw;
+      font-size: 0.9vw;
+      width: 1.5vw ;
+      height: 1.5vw ;
+    }
+  }
+
+@media only screen and (min-width: 120px) and (max-width: 520px){
+    .button {
+        top: 7vw;
+        width: 7vw;
+        left: 2.3vw;
+        font-size: 8px;
+    }
+    .social {
+      top: 7vw;
+    }
+  }
+
 
 .linkedin {
   background: #00aced;

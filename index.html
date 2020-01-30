@@ -453,6 +453,13 @@
           if(mobileAndTabletcheck() == false){
             zoom();
           }else if(mobileAndTabletcheck() == true){
+            var style2 = document.createElement('style');
+            style2.type = 'text/css';
+            style2.innerHTML = '.phoneFollow {display: none;}';
+            document.getElementsByTagName('head')[0].appendChild(style2);
+
+            var d1 = document.getElementById('phoneId');
+            d1.insertAdjacentHTML('beforeend', '<a href="#" title="Facebook" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-fw"></i></a></br></br><a href="#" title="linkedin" class="btn btn-twitter btn-lg"><i class="fa fa-linkedin fa-fw"></i></a>');
 
             var isZoomed = false;
             var img = document.getElementById("imgFeedbackBook");
@@ -461,9 +468,6 @@
                     var w = window.innerWidth;
                     var h = window.innerHeight;
 
-                    if(w<768){
-
-                    }
                     var style = document.createElement('style');
                     style.type = 'text/css';
                     if(w<768){
