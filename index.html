@@ -463,6 +463,19 @@
 
             var isZoomed = false;
             var img = document.getElementById("imgFeedbackBook");
+
+            if(window.innerWidth<450){
+              var stylePostIt = document.createElement('style');
+              stylePostIt.type = 'text/css';
+              stylePostIt.innerHTML = '.postIt{left: 7%; top: 50%;  width: 17%;height: 18vw; font-size: 5.2vw;}';
+              document.getElementsByTagName('head')[0].appendChild(stylePostIt);
+
+              var stylePostIt2 = document.createElement('style');
+              stylePostIt2.type = 'text/css';
+              stylePostIt2.innerHTML = '.postIt p{font-size: 2.2vw;}';
+              document.getElementsByTagName('head')[0].appendChild(stylePostIt2);
+            }
+
             img.addEventListener("click", function zoomOnClick(){
                 if(isZoomed == false){
                     var w = window.innerWidth;
