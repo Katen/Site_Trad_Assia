@@ -27,13 +27,12 @@
    $mail_Data .= "Nom, Prenom client : $name $surname <br> \n";
    $mail_Data .= "<br> \n";
    $mail_Data .= "Message client : $Message <br> \n";
-   $mail_Data .= "Etc.<br> \n";
    $mail_Data .= "</body> \n";
    $mail_Data .= "</HTML> \n";
    $headers  = "MIME-Version: 1.0 \n";
    $headers .= "Content-type: text/html; charset=iso-8859-1 \n";
    $headers .= "From: $from  \n";
-   $headers .= "Disposition-Notification-To: $from  \n";
+   // $headers .= "Disposition-Notification-To: $from  \n";
    // Message de Priorité haute
    // -------------------------
    $headers .= "X-Priority: 1  \n";
@@ -50,9 +49,9 @@
    //    }
 
   if ($CR_Mail === FALSE){
-    $responseArray = array('type' => 'success', 'message' => $okMessage);
-  }else{
     $responseArray = array('type' => 'danger', 'message' => $e->getMessage());
+  }else{
+    $responseArray = array('type' => 'success', 'message' => $okMessage);
   }
 
    // if requested by AJAX request return JSON response
